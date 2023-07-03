@@ -1,1 +1,61 @@
-<footer></footer>
+---
+const icons = {
+  social: [
+    {
+      path: '/icons/instagram.svg',
+      href: 'https://www.instagram.com/crysisstudio'
+    },
+    {
+      path: '/icons/tiktok.svg',
+      href: 'https://www.tiktok.com/@crysis_studio?lang=es'
+    },
+    {
+      path: '/icons/mail.svg',
+      href: 'crysiscontacto@gmail.com'
+    },
+    {
+      path: '/icons/twitter.svg',
+      href: 'https://twitter.com/CrysisStudio'
+    },
+    {
+      path: '/icons/soundcloud.svg',
+      href: 'https://soundcloud.com/crysis-studio'
+    },
+    {
+      path: '/icons/youtube.svg',
+      href: 'https://www.youtube.com/channel/UCdqhh7G46sWf7RiNF0xs8Mg'
+    }
+  ],
+  collab: [
+    {
+      path: '/icons/patreon.svg',
+      href: 'https://www.patreon.com/CrysisStudio'
+    },
+    {
+      path: '/icons/coffe.svg',
+      href: 'https://ko-fi.com/crysisstudio#paypalModal'
+    }
+  ]
+}
+
+const allIcons = icons.social.concat(icons.collab)
+---
+
+<footer class='w-full flex flex-col items-center gap-4 py-8'>
+  <ul class='flex justify-between w-full max-w-[500px]'>
+    {
+      allIcons.map(({ path, href }) => (
+        <li>
+          <a href={href}>
+            <img
+              src={path}
+              alt={href}
+              class='aspect-square h-10 transition-transform hover:scale-110'
+            />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <p class='text-[#cccccc66] text-lg'>2023 &copy; Crysis Studio</p>
+</footer>
