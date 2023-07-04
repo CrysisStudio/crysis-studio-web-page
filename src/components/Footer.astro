@@ -11,7 +11,7 @@ const icons = {
     },
     {
       path: '/icons/mail.svg',
-      href: 'crysiscontacto@gmail.com'
+      href: 'mailto:crysiscontacto@gmail.com'
     },
     {
       path: '/icons/twitter.svg',
@@ -46,7 +46,7 @@ const allIcons = icons.social.concat(icons.collab)
     {
       allIcons.map(({ path, href }) => (
         <li>
-          <a href={href}>
+          <a href={href} target='_blank'>
             <img
               src={path}
               alt={href}
