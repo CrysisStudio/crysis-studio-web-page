@@ -1,7 +1,40 @@
 ---
+import Title from '../components/Title.astro'
 import Layout from '../layouts/Layout.astro'
+
+const affiliates = [
+  {
+    name: 'AguWZ',
+    img: '/affiliates/aguwz.webp'
+  },
+  {
+    name: 'Astral',
+    img: '/affiliates/astral.webp'
+  },
+  {
+    name: 'Dlfferent',
+    img: '/affiliates/diff.webp'
+  },
+  {
+    name: 'LittleGiegie',
+    img: '/affiliates/littlegiegie.webp'
+  }
+]
 ---
 
 <Layout title='Afiliados'>
-  <h1 class='text-5xl font-bold text-red'>Afiliados</h1>
+  <main
+    class='flex flex-col items-center lg:max-w-[62.5rem] sm:max-w-[37.5rem] w-full'
+  >
+    <Title>Afiliados</Title>
+    <section class='flex flex-wrap justify-center gap-6 w-full px-4'>
+      {
+        affiliates.map((item) => (
+          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 w-full max-w-xs sm:h-[17.5rem] h-auto '>
+            <img src={item.img} alt={item.name} class='h-full w-full' />
+          </div>
+        ))
+      }
+    </section>
+  </main>
 </Layout>

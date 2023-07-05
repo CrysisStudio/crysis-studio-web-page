@@ -1,7 +1,48 @@
 ---
+import Title from '../components/Title.astro'
 import Layout from '../layouts/Layout.astro'
+
+const staff = [
+  { name: 'Betun', img: '/staff/betun.webp' },
+  { name: 'Cam', img: '/staff/cam.webp' },
+  { name: 'Cilem', img: '/staff/cilem.webp' },
+  { name: 'Dashi', img: '/staff/dashi.webp' },
+  { name: 'Eyelissed', img: '/staff/eyelissed.webp' },
+  { name: 'Fitzxel', img: '/staff/fitzxel.webp' },
+  { name: 'Kozurat', img: '/staff/kozurat.webp' },
+  { name: 'Kukie', img: '/staff/kukie.webp' },
+  { name: 'Leavy', img: '/staff/leavy.webp' },
+  { name: 'Lukah', img: '/staff/lukah.webp' },
+  { name: 'Lyferowo', img: '/staff/lyferowo.webp' },
+  { name: 'Maxi', img: '/staff/maxi.webp' },
+  { name: 'Nioxz', img: '/staff/nioxz.webp' },
+  { name: 'Oruxlord', img: '/staff/oruxlord.webp' },
+  { name: 'Poisonella', img: '/staff/poisonella.webp' },
+  { name: 'Ryuuzhang', img: '/staff/ryuuzhang.webp' },
+  { name: 'Sashe', img: '/staff/sashe.webp' },
+  { name: 'Squiso', img: '/staff/squiso.webp' },
+  { name: 'Thecoffeecrazy', img: '/staff/thecoffeecrazy.webp' },
+  { name: 'Tomas', img: '/staff/tomas.webp' },
+  { name: 'V', img: '/staff/v.webp' },
+  { name: 'Vewrdo', img: '/staff/vewrdo.webp' },
+  { name: 'Zero', img: '/staff/zero.webp' },
+  { name: 'Zerodrack', img: '/staff/zerodrack.webp' }
+]
 ---
 
 <Layout title='Staff'>
-  <h1 class='text-5xl font-bold text-red'>Staff</h1>
+  <main
+    class='flex flex-col items-center lg:max-w-[62.5rem] sm:max-w-[37.5rem] w-full'
+  >
+    <Title>Staff</Title>
+    <section class='flex flex-wrap justify-center gap-6 w-full px-4'>
+      {
+        staff.map((item) => (
+          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 w-full max-w-xs sm:h-[17.5rem] h-auto '>
+            <img src={item.img} alt={item.name} class='h-full w-full' />
+          </div>
+        ))
+      }
+    </section>
+  </main>
 </Layout>
