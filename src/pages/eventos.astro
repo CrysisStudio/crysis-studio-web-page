@@ -1,61 +1,7 @@
 ---
 import Title from '../components/Title.astro'
 import Layout from '../layouts/Layout.astro'
-
-const events = [
-  {
-    name: 'Final Five Alive',
-    img: '/events/final-five-alive.webp'
-  },
-  {
-    name: 'Torre de los Condenados',
-    img: '/events/torre-de-los-condenados.webp'
-  },
-  {
-    name: 'El Fin de la Tiranía',
-    img: '/events/el-fin-de-tirania.webp'
-  },
-  {
-    name: 'Batalla Estelar',
-    img: '/events/batalla-estelar.webp'
-  },
-  {
-    name: 'Fosa de Gladiadores',
-    img: '/events/fosa-de-gladiadores.webp'
-  },
-  {
-    name: 'Una Trivia Differente',
-    img: '/events/trivia-different.webp'
-  },
-  {
-    name: 'Survive',
-    img: '/events/survive-different.webp'
-  },
-  {
-    name: 'Un Evento Differente',
-    img: '/events/evento-differente.webp'
-  },
-  {
-    name: 'Evento UHC',
-    img: '/events/evento-uhc.webp'
-  },
-  {
-    name: 'Un Battle Build Differente',
-    img: '/events/build-battle-different.webp'
-  },
-  {
-    name: 'ElDritch Island',
-    img: '/events/dritch-island.webp'
-  },
-  {
-    name: 'La Velada de Dlfferent',
-    img: '/events/la-velada-different.webp'
-  },
-  {
-    name: 'Server Anárquico',
-    img: '/events/server-anarquico.webp'
-  }
-]
+import { EVENTS } from '../data/events.data'
 ---
 
 <Layout title='Eventos'>
@@ -65,7 +11,7 @@ const events = [
     <Title>Eventos</Title>
     <section class='flex flex-wrap justify-center gap-6 w-full px-4'>
       {
-        events.map((item) => (
+        EVENTS.map(item => (
           <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 w-full max-w-xs sm:h-[350px] h-auto '>
             <img src={item.img} alt={item.name} class='h-full w-full' />
           </div>
