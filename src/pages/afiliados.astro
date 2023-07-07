@@ -9,11 +9,15 @@ import { AFFILIATES } from '../data/affiliates.data'
     class='flex flex-col items-center lg:max-w-[60rem] sm:max-w-[37.5rem] w-full'
   >
     <Title>Afiliados</Title>
-    <section class='flex flex-wrap justify-center gap-3 w-full px-4'>
+    <section class='flex flex-wrap justify-center gap-6 w-full px-4'>
       {
         AFFILIATES.map((item) => (
-          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 max-w-xs w-full'>
-            <img src={item.img} alt={item.name} class='w-full' />
+          <div class='flex relative items-center justify-center lg:w-6/12 sm:w-5/12 max-w-xs w-full'>
+            <img
+              src={item.img}
+              alt={item.name}
+              class='w-full hover:scale-110 ease-out duration-300'
+            />
           </div>
         ))
       }

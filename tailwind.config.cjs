@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         red: '#ff4141',
         dark: '#212121'
+      },
+      grayscale: {
+        90: '90%'
       }
     }
   },

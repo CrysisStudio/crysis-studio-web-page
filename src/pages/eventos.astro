@@ -6,14 +6,18 @@ import { EVENTS } from '../data/events.data'
 
 <Layout title='Eventos'>
   <main
-    class='flex flex-col items-center lg:max-w-[1000px] sm:max-w-[600px] w-full'
+    class='flex flex-col items-center lg:max-w-[1300px] sm:max-w-[600px] w-full'
   >
     <Title>Eventos</Title>
-    <section class='flex flex-wrap justify-center gap-6 w-full px-4'>
+    <section class='flex flex-wrap justify-center gap-8 w-full px-4'>
       {
-        EVENTS.map(item => (
-          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 w-full max-w-xs sm:h-[350px] h-auto '>
-            <img src={item.img} alt={item.name} class='h-full w-full' />
+        EVENTS.map((item) => (
+          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 w-full h-auto'>
+            <img
+              src={item.img}
+              alt={item.name}
+              class='h-full w-full rounded-xl hover:scale-110 ease-out duration-300'
+            />
           </div>
         ))
       }

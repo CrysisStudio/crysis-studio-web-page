@@ -1,5 +1,9 @@
 export const EVENTS = [
   {
+    name: 'ElDritch Island',
+    img: '/events/dritch-island.webp'
+  },
+  {
     name: 'Final Five Alive',
     img: '/events/final-five-alive.webp'
   },
@@ -38,10 +42,6 @@ export const EVENTS = [
   {
     name: 'Un Battle Build Differente',
     img: '/events/build-battle-different.webp'
-  },
-  {
-    name: 'ElDritch Island',
-    img: '/events/dritch-island.webp'
   },
   {
     name: 'La Velada de Dlfferent',
