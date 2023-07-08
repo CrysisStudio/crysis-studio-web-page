@@ -10,6 +10,10 @@ module.exports = {
       grayscale: {
         90: '90%'
       }
+    },
+    transitionProperty: {
+      position: 'top, right, bottom, left',
+      transform: 'transform'
     }
   },
   plugins: []

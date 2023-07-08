@@ -9,14 +9,14 @@ import { EVENTS } from '../data/events.data'
     class='flex flex-col items-center lg:max-w-[1300px] sm:max-w-[600px] w-full'
   >
     <Title>Eventos</Title>
-    <section class='flex flex-wrap justify-center gap-8 w-full px-4'>
+    <section class='flex flex-wrap justify-center gap-4 w-full px-4'>
       {
-        EVENTS.map((item) => (
-          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 w-full h-auto'>
+        EVENTS.map(item => (
+          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 max-w-xs w-full h-auto ease-out duration-300 hover:scale-105'>
             <img
               src={item.img}
               alt={item.name}
-              class='h-full w-full rounded-xl hover:scale-110 ease-out duration-300'
+              class='h-full w-full rounded-lg '
             />
           </div>
         ))
