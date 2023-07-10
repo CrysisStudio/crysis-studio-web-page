@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       colors: {
         red: '#ff4141',
-        dark: '#212121'
+        dark: '#212121',
+        gray: {
+          100: '#f5f5f5',
+          opacity: '#f5f5f544'
+        }
       },
       grayscale: {
         90: '90%'

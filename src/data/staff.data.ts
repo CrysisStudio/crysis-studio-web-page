@@ -1,13 +1,13 @@
 export const ROLES = {
-  COMPOSITOR: 'Compositor',
-  CONSTRUCTOR: 'Constructor',
-  DESIGNER: 'Designer',
-  DEVELOPER: 'Developer',
-  DIRECTOR: 'Director',
-  HELPER: 'Helper',
-  MODERATION: 'Moderation',
-  SCRIPTWRITER: 'Guionista',
-  VOICEACTOR: 'Actor de voz'
+  DIRECTOR: 'Directores',
+  MODERATION: 'Moderadores',
+  HELPER: 'Ayudantes',
+  CONSTRUCTOR: 'Constructores',
+  COMPOSITOR: 'Compositores',
+  DESIGNER: 'Diseñadores',
+  DEVELOPER: 'Programadores',
+  SCRIPTWRITER: 'Guionistas',
+  VOICEACTOR: 'Actores de voz'
 }
 
 export const STAFF = [
@@ -37,13 +37,19 @@ export const STAFF = [
   {
     name: 'Dashi',
     img: '/staff/dashi.webp',
-    role: [ROLES.DESIGNER],
+    role: [ROLES.DESIGNER, ROLES.MODERATION],
     lead: null
   },
   {
     name: 'Eyelissed',
     img: '/staff/eyelissed.webp',
     role: [ROLES.CONSTRUCTOR],
+    lead: null
+  },
+  {
+    name: 'Facucarrion',
+    img: '/staff/facucarrion.webp',
+    role: [ROLES.DEVELOPER],
     lead: null
   },
   {
@@ -68,7 +74,7 @@ export const STAFF = [
     name: 'Leavy',
     img: '/staff/leavy.webp',
     role: [ROLES.DESIGNER, ROLES.DIRECTOR, ROLES.DESIGNER, ROLES.SCRIPTWRITER],
-    lead: ROLES.MODERATION
+    lead: ROLES.DIRECTOR
   },
   {
     name: 'Lukah',
@@ -80,6 +86,12 @@ export const STAFF = [
     name: 'Lyferowo',
     img: '/staff/lyferowo.webp',
     role: [ROLES.COMPOSITOR],
+    lead: null
+  },
+  {
+    name: 'Marmol',
+    img: '/staff/marmol.webp',
+    role: [ROLES.DEVELOPER],
     lead: null
   },
   {
