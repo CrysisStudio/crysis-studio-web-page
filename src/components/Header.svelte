@@ -31,7 +31,7 @@
 </script>
 
 <header
-  class="flex flex-col gap-8 items-center justify-between w-full p-4 max-[1024px]:flex-row"
+  class="flex flex-col gap-8 items-center justify-between w-full p-4 max-[1024px]:flex-row animate-fade-down"
 >
   <img
     src="/crysis-isologo.webp"

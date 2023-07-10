@@ -16,5 +16,5 @@ module.exports = {
       transform: 'transform'
     }
   },
-  plugins: []
+  plugins: [require('tailwindcss-animated')]
 }
