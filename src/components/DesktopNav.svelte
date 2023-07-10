@@ -8,7 +8,7 @@
       <li>
         <a
           {href}
-          class="text-2xl border-2 border-transparent py-[0.5rem] px-6 transition-colors duration-300 hover:text-white hover:border-white"
+          class="text-2xl border-transparent border-2 py-[0.5rem] px-6 transition-colors duration-300 hover:text-white hover:border-white"
         >
           {label}
         </a>
@@ -16,3 +16,11 @@
     {/each}
   </ul>
 </nav>
+
+<style>
+  @media (max-width: 1024px) {
+    nav {
+      display: none;
+    }
+  }
+</style>

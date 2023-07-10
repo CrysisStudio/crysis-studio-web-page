@@ -4,9 +4,7 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Home'>
-  <main
-    class='flex flex-col items-center w-full max-w-[1000px] animate-fade-up'
-  >
+  <main class='flex flex-col items-center w-full max-w-[1000px]'>
     <Title>¿Quiénes Somos?</Title>
     <div class='flex flex-col justify-center items-center md:flex-row'>
       <img
@@ -36,3 +34,9 @@ import Layout from '../layouts/Layout.astro'
     </div>
   </main>
 </Layout>
+
+<style>
+  body {
+    justify-content: space-between;
+  }
+</style>

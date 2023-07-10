@@ -6,12 +6,12 @@ import { AFFILIATES } from '../data/affiliates.data'
 
 <Layout title='Afiliados'>
   <main
-    class='flex flex-col items-center lg:max-w-[60rem] sm:max-w-[37.5rem] w-full'
+    class='flex flex-col items-center gap-6 lg:max-w-[60rem] sm:max-w-[37.5rem] w-full'
   >
     <Title>Afiliados</Title>
     <section class='flex flex-wrap justify-center gap-6 w-full px-4'>
       {
-        AFFILIATES.map((item) => (
+        AFFILIATES.map(item => (
           <div class='flex relative items-center justify-center lg:w-6/12 sm:w-5/12 max-w-xs w-full'>
             <img
               src={item.img}

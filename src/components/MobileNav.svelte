@@ -52,4 +52,9 @@
 </div>
 
 <style>
+  @media (min-width: 1025px) {
+    div {
+      display: none;
+    }
+  }
 </style>

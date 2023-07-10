@@ -2,10 +2,6 @@
   import DesktopNav from './DesktopNav.svelte'
   import MobileNav from './MobileNav.svelte'
 
-  let windowSize = window.innerWidth
-
-  window.addEventListener('resize', () => (windowSize = window.innerWidth))
-
   const sections = [
     {
       label: 'INICIO',
@@ -39,9 +35,6 @@
     class="md:h-[6.5rem] h-20 transition-transform hover:scale-90"
   />
 
-  {#if windowSize > 1024}
-    <DesktopNav {sections} />
-  {:else}
-    <MobileNav {sections} />
-  {/if}
+  <DesktopNav {sections} />
+  <MobileNav {sections} />
 </header>
