@@ -7,7 +7,7 @@ import StaffGrid from '../components/StaffGrid.svelte'
 
 <Layout title='Staff'>
   <main
-    class='flex flex-col flex-grow items-center gap-6 lg:max-w-[70rem] sm:max-w-[37.5rem] w-full'
+    class='flex flex-col flex-grow items-center gap-6 lg:max-w-[70rem] sm:max-w-[37.5rem] w-full animate-fade-up'
   >
     <Title>Staff</Title>
     <StaffGrid {STAFF} {ROLES} client:load />
