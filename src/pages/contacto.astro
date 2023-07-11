@@ -1,7 +1,36 @@
 ---
+import SocialMedia from '../components/SocialMedia.svelte'
+import Title from '../components/Title.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='Contacto'>
-  <h1 class='text-5xl font-bold'>Contacto</h1>
+  <main
+    class='flex flex-col items-center gap-6 lg:max-w-[70rem] sm:max-w-[37.5rem] w-full animate-fade-up'
+  >
+    <Title>Contacto</Title>
+    <section class='flex flex-col gap-6 text-white text-2xl'>
+      <h2><strong class='text-red'>Encontranos</strong> en:</h2>
+      <SocialMedia variant='social' size='lg' />
+      <h2>
+        <strong class='text-red'>Colabora</strong> con <strong class='text-red'
+          >Crysis Studio</strong
+        > en:
+      </h2>
+      <SocialMedia variant='collab' size='lg' />
+      <h2>
+        O <strong class='text-red'>Contratanos</strong> rellenando el siguiente <br
+        />
+        <a href='#' class='underline'
+          ><strong class='text-red'>Formulario de Google</strong></a
+        >
+      </h2>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  body {
+    justify-content: space-between;
+  }
+</style>

@@ -1,7 +1,26 @@
 ---
+import Title from '../components/Title.astro'
 import Layout from '../layouts/Layout.astro'
+import { EVENTS } from '../data/events.data'
 ---
 
 <Layout title='Eventos'>
-  <h1 class='text-5xl font-bold'>Eventos</h1>
+  <main
+    class='flex flex-col gap-6 items-center lg:max-w-[1300px] sm:max-w-[600px] w-full animate-fade-up'
+  >
+    <Title>Eventos</Title>
+    <section class='flex flex-wrap justify-center gap-4 w-full px-4'>
+      {
+        EVENTS.map(item => (
+          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 max-w-xs w-full h-auto ease-out duration-300 hover:scale-105'>
+            <img
+              src={item.img}
+              alt={item.name}
+              class='h-full w-full rounded-lg '
+            />
+          </div>
+        ))
+      }
+    </section>
+  </main>
 </Layout>

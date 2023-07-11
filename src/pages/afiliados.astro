@@ -1,0 +1,26 @@
+---
+import Title from '../components/Title.astro'
+import Layout from '../layouts/Layout.astro'
+import { AFFILIATES } from '../data/affiliates.data'
+---
+
+<Layout title='Afiliados'>
+  <main
+    class='flex flex-col items-center gap-6 lg:max-w-[60rem] sm:max-w-[37.5rem] w-full animate-fade-up'
+  >
+    <Title>Afiliados</Title>
+    <section class='flex flex-wrap justify-center gap-4 w-full px-4'>
+      {
+        AFFILIATES.map(item => (
+          <div class='flex relative items-center justify-center lg:w-6/12 sm:w-5/12 max-w-xs w-full'>
+            <img
+              src={item.img}
+              alt={item.name}
+              class='w-full hover:scale-105 ease-out duration-300'
+            />
+          </div>
+        ))
+      }
+    </section>
+  </main>
+</Layout>
