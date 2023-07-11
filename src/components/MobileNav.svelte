@@ -1,5 +1,6 @@
 <script>
   export let sections
+
   let isOpen = false
   let status = 'CLOSED'
 

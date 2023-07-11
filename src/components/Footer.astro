@@ -1,61 +1,8 @@
 ---
-const icons = {
-  social: [
-    {
-      path: '/icons/instagram.svg',
-      href: 'https://www.instagram.com/crysisstudio'
-    },
-    {
-      path: '/icons/tiktok.svg',
-      href: 'https://www.tiktok.com/@crysis_studio?lang=es'
-    },
-    {
-      path: '/icons/mail.svg',
-      href: 'mailto:crysiscontacto@gmail.com'
-    },
-    {
-      path: '/icons/twitter.svg',
-      href: 'https://twitter.com/CrysisStudio'
-    },
-    {
-      path: '/icons/soundcloud.svg',
-      href: 'https://soundcloud.com/crysis-studio'
-    },
-    {
-      path: '/icons/youtube.svg',
-      href: 'https://www.youtube.com/channel/UCdqhh7G46sWf7RiNF0xs8Mg'
-    }
-  ],
-  collab: [
-    {
-      path: '/icons/patreon.svg',
-      href: 'https://www.patreon.com/CrysisStudio'
-    },
-    {
-      path: '/icons/coffe.svg',
-      href: 'https://ko-fi.com/crysisstudio#paypalModal'
-    }
-  ]
-}
-
-const socialMedia = icons.social.concat(icons.collab)
+import SocialMedia from './SocialMedia.svelte'
 ---
 
-<footer class='w-full flex flex-col items-center gap-4 py-8 px-6 '>
-  <ul class='flex justify-between w-full max-w-[500px] animate-fade-up'>
-    {
-      socialMedia.map(({ path, href }) => (
-        <li>
-          <a href={href} target='_blank'>
-            <img
-              src={path}
-              alt={href}
-              class='aspect-square h-10 transition-transform hover:scale-110'
-            />
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+<footer class='flex flex-col items-center gap-4 py-8 px-6'>
+  <SocialMedia />
   <p class='text-[#cccccc66] text-lg'>2023 &copy; Crysis Studio</p>
 </footer>

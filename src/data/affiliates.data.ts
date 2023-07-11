@@ -8,6 +8,10 @@ export const AFFILIATES = [
     img: '/affiliates/astral.webp'
   },
   {
+    name: 'BoxMine',
+    img: '/affiliates/boxmine.webp'
+  },
+  {
     name: 'Dlfferent',
     img: '/affiliates/diff.webp'
   },

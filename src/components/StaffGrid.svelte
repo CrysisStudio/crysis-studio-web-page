@@ -41,7 +41,7 @@
     />
     <div class="flex flex-col flex-grow justify-center p-1 sm:p-0">
       <h2 class="text-4xl">{filteredLeader.name}</h2>
-      <p>Lider de {filteredLeader.lead}</p>
+      <p>Líder de {filteredLeader.lead}</p>
     </div>
   </section>
 {/if}

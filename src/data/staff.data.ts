@@ -137,13 +137,13 @@ export const STAFF = [
     lead: null
   },
   {
-    name: 'Thecoffeecrazy',
+    name: 'TheCoffeeCrazy',
     img: '/staff/thecoffeecrazy.webp',
     role: [ROLES.CONSTRUCTOR],
     lead: ROLES.CONSTRUCTOR
   },
   {
-    name: 'Tomas',
+    name: 'Tomás',
     img: '/staff/tomas.webp',
     role: [ROLES.DESIGNER],
     lead: null
