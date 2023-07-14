@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-3 px-4">
   <span class="flex gap-4 justify-center flex-wrap w-full max-w-[750px]">
     {#each rolesValues as role}
       <FilterButton {handleClick} {role} {active} />
