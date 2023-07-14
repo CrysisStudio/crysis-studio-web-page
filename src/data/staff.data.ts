@@ -227,6 +227,12 @@ export const STAFF = [
     lead: null
   },
   {
+    name: 'Mils',
+    img: '/staff/mils.webp',
+    role: [ROLES.SCRIPTWRITER],
+    lead: null
+  },
+  {
     name: 'Poisonella',
     img: '/staff/poisonella.webp',
     role: [],
