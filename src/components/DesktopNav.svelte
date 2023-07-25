@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-  <ul class="flex gap-10 text-red">
+  <ul class="flex text-red">
     {#each sections as { label, href }}
       <li>
         <a
@@ -18,7 +18,7 @@
 </nav>
 
 <style>
-  @media (max-width: 1024px) {
+  @media (max-width: 1050px) {
     nav {
       display: none;
     }

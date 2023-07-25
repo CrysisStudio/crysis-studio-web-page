@@ -27,7 +27,7 @@
 </script>
 
 <header
-  class="flex flex-col gap-8 items-center justify-between w-full p-4 max-[1024px]:flex-row"
+  class="flex flex-row items-center justify-around w-full p-4 max-[1051px]:flex-row"
 >
   <a href="/">
     <img

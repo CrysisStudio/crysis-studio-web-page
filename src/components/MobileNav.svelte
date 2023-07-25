@@ -53,7 +53,7 @@
 </div>
 
 <style>
-  @media (min-width: 1025px) {
+  @media (min-width: 1051px) {
     div {
       display: none;
     }

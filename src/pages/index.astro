@@ -5,32 +5,40 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title='Home'>
   <main
-    class='flex flex-col items-center w-full max-w-[1000px] gap-6 animate-fade-up'
+    class='flex flex-col items-center w-full max-w-[1000px] animate-fade-up'
   >
-    <Title>¿Quiénes Somos?</Title>
     <div class='flex flex-col justify-center items-center md:flex-row'>
       <img
         src='/crysis.webp'
         alt='Crysis Studio'
-        class='w-4/5 max-w-[300px] md:w-2/5'
+        class='w-4/5 max-w-[400px] md:w-2/5'
       />
-      <div class='w-4/5 text-white md:w-2/5'>
-        <p class='indent-5'>
-          Crysis Studio es una organización apasionada que se especializa en la
-          creación de eventos emocionantes en Minecraft para streamers.
+      <div class='w-4/5 text-white md:w-3/6'>
+        <h1 class='text-3xl text-left font-bold mt-4 mb-4 text-red'>
+          ¿Quiénes Somos?
+        </h1>
+        <p class='mt-5 mb-5'>
+          <span>Crysis Studio</span> es una organización apasionada que se especializa
+          en la creación de <span>eventos emocionantes</span> en Minecraft para <span
+            >streamers</span
+          >.
         </p>
-        <p class='indent-5'>
+        <p class='mt-5 mb-5'>
           Nuestro equipo de expertos en diseño de eventos para ofrecer
-          experiencias únicas y memorables. Valoramos la comunidad y nos
-          esforzamos por crear un ambiente inclusivo y amigable donde los
-          jugadores y espectadores puedan disfrutar y sentirse parte de algo
-          especial.
+          <span>experiencias únicas y memorables.</span> Valoramos la comunidad y
+          nos esforzamos por crear un ambiente inclusivo y amigable donde los jugadores
+          y espectadores puedan disfrutar y <span
+            >sentirse parte de algo especial.</span
+          >
         </p>
-        <p class='indent-5'>
-          Nuestra misión es unir a las personas a través de los videojuegos y
-          generar momentos de diversión y camaradería en cada evento que
-          organizamos. ¡Únete a nosotros en estaemocionante aventura en el mundo
-          de Minecraft!
+
+        <p class='mt-5 mb-5'>
+          Nuestra misión es <span>unir a las personas</span> a través de los videojuegos
+          y generar momentos de diversión y camaradería en cada evento que organizamos.
+        </p>
+        <p class='text-red mt-5 mb-5 w-5/6 font-bold'>
+          ¡Únete a nosotros en estaemocionante aventura en el mundo de
+          Minecraft!
         </p>
       </div>
     </div>
@@ -40,5 +48,11 @@ import Layout from '../layouts/Layout.astro'
 <style>
   body {
     justify-content: space-between;
+  }
+  p {
+    color: rgb(179, 179, 179);
+  }
+  span {
+    color: white;
   }
 </style>
