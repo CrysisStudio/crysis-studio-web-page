@@ -33,7 +33,7 @@
     <img
       src="/crysis-isologo.webp"
       alt="Crysis Studio Logo"
-      class="md:h-[6.5rem] h-20 relative transition-transform hover:scale-90 z-20"
+      class="md:h-[5rem] h-20 relative transition-transform hover:scale-90 z-20"
     />
   </a>
 

@@ -8,7 +8,7 @@
       <li>
         <a
           {href}
-          class="text-2xl border-transparent border-2 py-[0.5rem] px-6 transition-colors duration-300 hover:text-white hover:border-white"
+          class="text-xl border-transparent border-2 py-[0.5rem] px-4 transition-colors duration-300 hover:text-white hover:border-white"
         >
           {label}
         </a>
