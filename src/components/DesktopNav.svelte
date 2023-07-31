@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-  <ul class="flex text-red">
+  <ul class="flex text-rojo">
     {#each sections as { label, href }}
       <li>
         <a

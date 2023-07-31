@@ -23,7 +23,7 @@
 </script>
 
 <div class="flex flex-col gap-3 px-4">
-  <span class="flex gap-4 justify-center flex-wrap w-full max-w-[750px]">
+  <span class="flex gap-4 justify-center flex-wrap w-full max-w-[900px]">
     {#each rolesValues as role}
       <FilterButton {handleClick} {role} {active} />
     {/each}
@@ -32,12 +32,12 @@
 
 {#if filteredLeader}
   <section
-    class="w-full md:max-w-[600px] sm:max-w-none sm:w-4/5 sm:flex-row max-w-xs bg-red flex flex-col sm:gap-3"
+    class="w-full md:max-w-[800px] sm:max-w-none sm:w-full sm:flex-row max-w-xs bg-rojo flex flex-col sm:gap-3"
   >
     <img
       src={filteredLeader.img}
       alt={filteredLeader.name}
-      class="sm:w-2/5 w-full"
+      class="sm:w-3/5 w-full"
     />
     <div class="flex flex-col flex-grow justify-center p-1 sm:p-0">
       <h2 class="text-4xl">{filteredLeader.name}</h2>

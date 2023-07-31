@@ -5,7 +5,7 @@
 </script>
 
 <button
-  class="py-2 px-4 text-white border-2 rounded-full hover:text-red hover:border-red transition-color duration-300 ease-in-out
+  class="py-2 px-4 text-white border-2 rounded-full hover:text-rojo hover:border-rojo transition-color duration-300 ease-in-out
   {active === role
     ? 'bg-red border-red hover:text-white'
     : 'bg-transparent border-white'}"

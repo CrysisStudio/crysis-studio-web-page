@@ -180,7 +180,7 @@ export const STAFF = [
   },
   {
     name: 'AguWZ',
-    img: '/affiliates/aguwz.webp',
+    img: '/staff/aguwz.webp',
     role: [ROLES.MARKETING],
     lead: null
   },
@@ -236,6 +236,42 @@ export const STAFF = [
     name: 'Poisonella',
     img: '/staff/poisonella.webp',
     role: [],
+    lead: null
+  },
+  {
+    name: 'Elena',
+    img: '/staff/elena.webp',
+    role: [ROLES.MARKETING],
+    lead: null
+  },
+  {
+    name: 'Sunny',
+    img: '/staff/sunny.webp',
+    role: [ROLES.HELPER],
+    lead: null
+  },
+  {
+    name: 'Gabilavin',
+    img: '/staff/gabilavin.webp',
+    role: [ROLES.COMPOSITOR],
+    lead: null
+  },
+  {
+    name: 'SrSanty',
+    img: '/staff/santy.webp',
+    role: [ROLES.CONSTRUCTOR],
+    lead: null
+  },
+  {
+    name: 'Skiddy',
+    img: '/staff/skiddy.webp',
+    role: [ROLES.MODERATION],
+    lead: null
+  },
+  {
+    name: 'xnueve',
+    img: '/staff/9.webp',
+    role: [ROLES.MODERATION],
     lead: null
   }
 ]
