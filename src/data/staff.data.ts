@@ -20,21 +20,18 @@ export const STAFF = [
       ROLES.DESIGNER,
       ROLES.DIRECTOR,
       ROLES.DESIGNER,
+      ROLES.DEVELOPER,
       ROLES.MODERATION,
       ROLES.SCRIPTWRITER,
-      ROLES.ADMINISTRATOR
+      ROLES.ADMINISTRATOR,
+      ROLES.COMPOSITOR,
+      ROLES.MARKETING
     ],
     lead: ROLES.DIRECTOR
   },
   {
     name: 'Lukah',
     img: '/staff/lukah.webp',
-    role: [ROLES.DIRECTOR],
-    lead: null
-  },
-  {
-    name: 'Betun',
-    img: '/staff/betun.webp',
     role: [ROLES.DIRECTOR],
     lead: null
   },
@@ -48,9 +45,20 @@ export const STAFF = [
       ROLES.VOICEACTOR,
       ROLES.MODERATION,
       ROLES.HELPER,
-      ROLES.COMPOSITOR
+      ROLES.COMPOSITOR,
+      ROLES.DIRECTOR
     ],
-    lead: ROLES.ADMINISTRATOR
+    lead: null
+  },
+  {
+    name: 'Betun',
+    img: '/staff/betun.webp',
+    role: [
+      ROLES.DIRECTOR,
+      ROLES.DEVELOPER,
+      ROLES.ADMINISTRATOR
+    ],
+    lead: null
   },
   {
     name: 'V',
@@ -62,7 +70,7 @@ export const STAFF = [
       ROLES.DESIGNER,
       ROLES.ADMINISTRATOR
     ],
-    lead: ROLES.MODERATION
+    lead: ROLES.ADMINISTRATOR
   },
   {
     name: 'TheCoffeeCrazy',
@@ -170,7 +178,7 @@ export const STAFF = [
     name: 'Lyferowo',
     img: '/staff/lyferowo.webp',
     role: [ROLES.COMPOSITOR],
-    lead: null
+    lead: ROLES.COMPOSITOR
   },
   {
     name: 'Kukie',
@@ -242,7 +250,7 @@ export const STAFF = [
     name: 'Elena',
     img: '/staff/elena.webp',
     role: [ROLES.MARKETING],
-    lead: null
+    lead: ROLES.MARKETING
   },
   {
     name: 'Sunny',
@@ -271,7 +279,10 @@ export const STAFF = [
   {
     name: 'xnueve',
     img: '/staff/9.webp',
-    role: [ROLES.MODERATION],
-    lead: null
+    role: [
+      ROLES.MODERATION,
+      ROLES.CONSTRUCTOR
+    ],
+    lead: ROLES.MODERATION
   }
 ]
