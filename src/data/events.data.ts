@@ -1,5 +1,9 @@
 export const EVENTS = [
   {
+    name: 'Only Up',
+    img: '/events/onlyup.webp'
+  },
+  {
     name: 'Operacion Escape',
     img: '/events/operacionescape.webp'
   },

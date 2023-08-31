@@ -53,11 +53,7 @@ export const STAFF = [
   {
     name: 'Betun',
     img: '/staff/betun.webp',
-    role: [
-      ROLES.DIRECTOR,
-      ROLES.DEVELOPER,
-      ROLES.ADMINISTRATOR
-    ],
+    role: [ROLES.DIRECTOR, ROLES.DEVELOPER, ROLES.ADMINISTRATOR],
     lead: null
   },
   {
@@ -132,12 +128,7 @@ export const STAFF = [
     role: [ROLES.DESIGNER],
     lead: ROLES.DESIGNER
   },
-  {
-    name: 'Maxi',
-    img: '/staff/maxi.webp',
-    role: [ROLES.DESIGNER],
-    lead: null
-  },
+
   {
     name: 'Oruxlord',
     img: '/staff/oruxlord.webp',
@@ -193,12 +184,6 @@ export const STAFF = [
     lead: null
   },
   {
-    name: 'Sashe',
-    img: '/staff/sashe.webp',
-    role: [ROLES.DESIGNER, ROLES.MARKETING],
-    lead: null
-  },
-  {
     name: 'Eyelissed',
     img: '/staff/eyelissed.webp',
     role: [ROLES.CONSTRUCTOR],
@@ -234,18 +219,7 @@ export const STAFF = [
     role: [ROLES.SCRIPTWRITER],
     lead: null
   },
-  {
-    name: 'Mils',
-    img: '/staff/mils.webp',
-    role: [ROLES.SCRIPTWRITER],
-    lead: null
-  },
-  {
-    name: 'Poisonella',
-    img: '/staff/poisonella.webp',
-    role: [],
-    lead: null
-  },
+
   {
     name: 'Elena',
     img: '/staff/elena.webp',
@@ -279,10 +253,43 @@ export const STAFF = [
   {
     name: 'xnueve',
     img: '/staff/9.webp',
-    role: [
-      ROLES.MODERATION,
-      ROLES.CONSTRUCTOR
-    ],
+    role: [ROLES.MODERATION, ROLES.CONSTRUCTOR],
     lead: ROLES.MODERATION
+  },
+  {
+    name: 'Tobi',
+    img: '/staff/tobi.png',
+    role: [ROLES.CONSTRUCTOR, ROLES.HELPER],
+    lead: null
+  },
+  {
+    name: ' Wooden',
+    img: '/staff/woden.png',
+    role: [ROLES.VOICEACTOR],
+    lead: null
+  },
+  {
+    name: 'Javi',
+    img: '/staff/javi.png',
+    role: [ROLES.DEVELOPER, ROLES.DESIGNER],
+    lead: null
+  },
+  {
+    name: 'Klixy',
+    img: '/staff/klixy.png',
+    role: [ROLES.VOICEACTOR, ROLES.DESIGNER],
+    lead: null
+  },
+  {
+    name: 'Maker',
+    img: '/staff/Maker.png',
+    role: [ROLES.HELPER, ROLES.CONSTRUCTOR],
+    lead: null
+  },
+  {
+    name: 'Rain',
+    img: '/staff/rain.png',
+    role: [ROLES.CONSTRUCTOR, ROLES.CONSTRUCTOR],
+    lead: null
   }
 ]

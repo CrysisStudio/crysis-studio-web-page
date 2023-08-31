@@ -10,9 +10,5 @@ export const AFFILIATES = [
   {
     name: 'Dlfferent',
     img: '/affiliates/diff.webp'
-  },
-  {
-    name: 'LittleGiegie',
-    img: '/affiliates/littlegiegie.webp'
   }
 ]
