@@ -20,6 +20,10 @@
       href: '/afiliados'
     },
     {
+      label: 'DESCARGAS',
+      href: '/descargas'
+    },
+    {
       label: 'CONTACTO',
       href: '/contacto'
     }

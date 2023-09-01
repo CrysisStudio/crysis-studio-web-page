@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const DOWNLOADS = [
+  {
+    icon: '/icons/windows.svg',
+    title: 'Windows',
+    url: 'https://github.com/Fitzxel/crysis-launcher-public-releases/releases/latest/download/Crysis-Launcher-setup-win.exe'
+  },
+  {
+    icon: '/icons/linux.svg',
+    title: 'Linux (paquete universal)',
+    url: 'https://github.com/Fitzxel/crysis-launcher-public-releases/releases/latest/download/crysis-launcher-setup-linux.AppImage'
+  },
+  {
+    icon: '/icons/linux.svg',
+    title: 'Linux Deb',
+    url: 'https://github.com/Fitzxel/crysis-launcher-public-releases/releases/latest/download/crysis-launcher-setup-linux.deb'
+  }
+]
+---
+
+<Layout title='Descargas'>
+  <main class='flex flex-col items-center justify-center px-8 lg:max-w-[70rem] sm:max-w-[37.5rem] w-full animate-fade-up flex-grow'>
+    <h1 class='text-4xl text-left font-bold mt-4 mb-4 text-rojo'>
+      Descarga Nuestro Launcher
+    </h1>
+    <section class="flex flex-grow flex-col items-center justify-center gap-8 w-full">
+      {
+        DOWNLOADS.map(download => (
+          <a href={download.url} class="w-full lg:w-1/2 flex items-center justify-between border-2 border-white p-4 rounded-full hover:border-rojo hover:bg-rojo transition-color duration-300 ease-in-out">
+            <img src={download.icon} alt={download.title} class="h-8 fill-rojo" />
+            <p class="text-white">{download.title}</p>  
+          </a>
+        ))
+      }
+    </section>
+    
+  </main>
+</Layout>

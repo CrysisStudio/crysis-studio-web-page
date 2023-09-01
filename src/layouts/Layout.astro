@@ -12,12 +12,28 @@ const { title } = Astro.props
 <html lang='es' class='overflow-x-hidden'>
   <head>
     <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
     <meta name='generator' content={Astro.generator} />
-    <meta name='og:image' content='/crysis-isologo.webp' />
     <title>{title} - Crysis Studio</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content={`${title} - Crysis Studio`} />
+    <meta name="description" content="Crysis Studio es una organización apasionada que se especializa en la creación de eventos emocionantes en Minecraft para streamers." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://crysistudio.tech/" />
+    <meta property="og:title" content="Inicio - Crysis Studio" />
+    <meta property="og:description" content="Crysis Studio es una organización apasionada que se especializa en la creación de eventos emocionantes en Minecraft para streamers." />
+    <meta property="og:image" content="/crysis-isologo-red.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://crysistudio.tech/" />
+    <meta property="twitter:title" content="Inicio - Crysis Studio" />
+    <meta property="twitter:description" content="Crysis Studio es una organización apasionada que se especializa en la creación de eventos emocionantes en Minecraft para streamers." />
+    <meta property="twitter:image" content="/crysis-isologo-red.webp" />
   </head>
   <body class='bg-gradient-to-b from-zinc-900 to-red-900 bg-fixed'>
     <Header client:load />
@@ -50,5 +66,10 @@ const { title } = Astro.props
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+  }
+
+  hr {
+    border-color: #e5e7eb26;
+    width: calc(100% + 3rem);
   }
 </style>
