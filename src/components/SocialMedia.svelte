@@ -45,7 +45,7 @@
   }
 
   const socialMedia = {
-    all: icons.social.concat(icons.collab),
+    all: [...icons.social, ...icons.collab],
     social: icons.social,
     collab: icons.collab
   }
