@@ -258,7 +258,7 @@ export const STAFF = [
   },
   {
     name: 'Tobi',
-    img: '/staff/tobi.png',
+    img: '/staff/tobi.webp',
     role: [ROLES.CONSTRUCTOR, ROLES.HELPER],
     lead: null
   },
@@ -270,25 +270,25 @@ export const STAFF = [
   },
   {
     name: 'Javi',
-    img: '/staff/javi.png',
+    img: '/staff/javi.webp',
     role: [ROLES.DEVELOPER, ROLES.DESIGNER],
     lead: null
   },
   {
     name: 'Klixy',
-    img: '/staff/klixy.png',
+    img: '/staff/klixy.webp',
     role: [ROLES.VOICEACTOR, ROLES.DESIGNER],
     lead: null
   },
   {
     name: 'Maker',
-    img: '/staff/Maker.png',
+    img: '/staff/maker.webp',
     role: [ROLES.HELPER, ROLES.CONSTRUCTOR],
     lead: null
   },
   {
     name: 'Rain',
-    img: '/staff/rain.png',
+    img: '/staff/rain.webp',
     role: [ROLES.CONSTRUCTOR, ROLES.CONSTRUCTOR],
     lead: null
   }
