@@ -264,7 +264,7 @@ export const STAFF = [
   },
   {
     name: ' Wooden',
-    img: '/staff/woden.png',
+    img: '/staff/wooden.webp',
     role: [ROLES.VOICEACTOR],
     lead: null
   },
