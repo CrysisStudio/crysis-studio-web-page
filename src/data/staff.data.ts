@@ -1,3 +1,4 @@
+import { AFFILIATES } from './affiliates.data'
 export const ROLES = {
   DIRECTOR: 'Directores',
   ADMINISTRATOR: 'Administradores',
@@ -8,8 +9,8 @@ export const ROLES = {
   COMPOSITOR: 'Compositores',
   HELPER: 'Ayudantes',
   MARKETING: 'Marketing',
-  SCRIPTWRITER: 'Guionistas',
-  VOICEACTOR: 'Actores de voz'
+  STORYTELLER: 'Storytellers',
+  MANAGMENT: 'Gestión'
 }
 
 export const STAFF = [
@@ -22,10 +23,11 @@ export const STAFF = [
       ROLES.DESIGNER,
       ROLES.DEVELOPER,
       ROLES.MODERATION,
-      ROLES.SCRIPTWRITER,
+      ROLES.STORYTELLER,
       ROLES.ADMINISTRATOR,
       ROLES.COMPOSITOR,
-      ROLES.MARKETING
+      ROLES.MARKETING,
+      ROLES.MANAGMENT
     ],
     lead: ROLES.DIRECTOR
   },
@@ -42,7 +44,7 @@ export const STAFF = [
       ROLES.DESIGNER,
       ROLES.CONSTRUCTOR,
       ROLES.DEVELOPER,
-      ROLES.VOICEACTOR,
+      ROLES.STORYTELLER,
       ROLES.MODERATION,
       ROLES.HELPER,
       ROLES.COMPOSITOR,
@@ -61,19 +63,14 @@ export const STAFF = [
     img: '/staff/v.webp',
     role: [
       ROLES.MODERATION,
-      ROLES.SCRIPTWRITER,
+      ROLES.STORYTELLER,
       ROLES.CONSTRUCTOR,
       ROLES.DESIGNER,
       ROLES.ADMINISTRATOR
     ],
     lead: ROLES.ADMINISTRATOR
   },
-  {
-    name: 'TheCoffeeCrazy',
-    img: '/staff/thecoffeecrazy.webp',
-    role: [ROLES.CONSTRUCTOR, ROLES.ADMINISTRATOR],
-    lead: ROLES.CONSTRUCTOR
-  },
+
   {
     name: 'Fitzxel',
     img: '/staff/fitzxel.webp',
@@ -110,12 +107,7 @@ export const STAFF = [
     role: [ROLES.DEVELOPER],
     lead: null
   },
-  {
-    name: 'Dashi',
-    img: '/staff/dashi.webp',
-    role: [ROLES.DESIGNER, ROLES.MODERATION],
-    lead: null
-  },
+
   {
     name: 'Verdo',
     img: '/staff/verdo.webp',
@@ -183,12 +175,7 @@ export const STAFF = [
     role: [ROLES.MARKETING],
     lead: null
   },
-  {
-    name: 'Eyelissed',
-    img: '/staff/eyelissed.webp',
-    role: [ROLES.CONSTRUCTOR],
-    lead: null
-  },
+
   {
     name: 'Squiso',
     img: '/staff/squiso.webp',
@@ -210,13 +197,13 @@ export const STAFF = [
   {
     name: 'Manaxo',
     img: '/staff/manaxo.webp',
-    role: [ROLES.HELPER, ROLES.VOICEACTOR],
+    role: [ROLES.HELPER, ROLES.STORYTELLER],
     lead: null
   },
   {
     name: 'Sere',
     img: '/staff/sere.webp',
-    role: [ROLES.SCRIPTWRITER],
+    role: [ROLES.STORYTELLER],
     lead: null
   },
 
@@ -225,12 +212,6 @@ export const STAFF = [
     img: '/staff/elena.webp',
     role: [ROLES.MARKETING],
     lead: ROLES.MARKETING
-  },
-  {
-    name: 'Sunny',
-    img: '/staff/sunny.webp',
-    role: [ROLES.HELPER],
-    lead: null
   },
   {
     name: 'Gabilavin',
@@ -250,12 +231,7 @@ export const STAFF = [
     role: [ROLES.MODERATION],
     lead: null
   },
-  {
-    name: 'xnueve',
-    img: '/staff/9.webp',
-    role: [ROLES.MODERATION, ROLES.CONSTRUCTOR],
-    lead: ROLES.MODERATION
-  },
+
   {
     name: 'Tobi',
     img: '/staff/tobi.webp',
@@ -265,7 +241,7 @@ export const STAFF = [
   {
     name: ' Wooden',
     img: '/staff/wooden.webp',
-    role: [ROLES.VOICEACTOR],
+    role: [ROLES.STORYTELLER],
     lead: null
   },
   {
@@ -274,12 +250,7 @@ export const STAFF = [
     role: [ROLES.DEVELOPER, ROLES.DESIGNER],
     lead: null
   },
-  {
-    name: 'Klixy',
-    img: '/staff/klixy.webp',
-    role: [ROLES.VOICEACTOR, ROLES.DESIGNER],
-    lead: null
-  },
+
   {
     name: 'Maker',
     img: '/staff/maker.webp',
@@ -289,7 +260,61 @@ export const STAFF = [
   {
     name: 'Rain',
     img: '/staff/rain.webp',
-    role: [ROLES.CONSTRUCTOR, ROLES.CONSTRUCTOR],
+    role: [ROLES.CONSTRUCTOR, ROLES.COMPOSITOR],
+    lead: null
+  },
+  {
+    name: 'anchy',
+    img: '/staff/anchy.webp',
+    role: [ROLES.MANAGMENT],
+    lead: null
+  },
+  {
+    name: 'histerr',
+    img: '/staff/histerr.webp',
+    role: [ROLES.DEVELOPER],
+    lead: null
+  },
+  {
+    name: 'dypok',
+    img: '/staff/dypok.webp',
+    role: [ROLES.DEVELOPER, ROLES.DESIGNER],
+    lead: null
+  },
+  {
+    name: 'KATTO',
+    img: '/staff/katto.webp',
+    role: [ROLES.DEVELOPER],
+    lead: null
+  },
+  {
+    name: 'lapeke',
+    img: '/staff/lapeke.webp',
+    role: [ROLES.DESIGNER],
+    lead: null
+  },
+  {
+    name: 'mishoni',
+    img: '/staff/mishoni.webp',
+    role: [ROLES.MANAGMENT],
+    lead: null
+  },
+  {
+    name: 'rey',
+    img: '/staff/rey.webp',
+    role: [ROLES.DESIGNER],
+    lead: null
+  },
+  {
+    name: 'wachu',
+    img: '/staff/wachu.webp',
+    role: [ROLES.DESIGNER],
+    lead: null
+  },
+  {
+    name: 'morpheus',
+    img: '/staff/morpheus.webp',
+    role: [ROLES.STORYTELLER],
     lead: null
   }
 ]
