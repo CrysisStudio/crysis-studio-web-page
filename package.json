@@ -7,8 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "deploy": "astro build && gh-pages -d dist"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/svelte": "^3.1.0",
@@ -18,7 +17,6 @@
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
     "tailwindcss-animated": "^1.0.1"
   },
   "repository": {

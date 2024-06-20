@@ -1,5 +1,13 @@
 export const EVENTS = [
   {
+    name: 'Choque Elemental',
+    img: '/events/choqueelemental.webp'
+  },
+  {
+    name: 'Barbie',
+    img: '/events/barbie.webp'
+  },
+  {
     name: 'Only Up',
     img: '/events/onlyup.webp'
   },
