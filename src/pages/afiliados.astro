@@ -13,33 +13,39 @@ import { CREATORS } from '../data/affiliates.data'
     <div class='mt-20 flex flex-col w-full'>
       <Title>Marcas Afiliadas</Title>
 
-      <section class='flex flex-wrap justify-center gap-4 w-full px-4'>
+      <section class='flex flex-wrap justify-center gap-4 w-full px-4'  style='margin-top: 40px;'>
         {
           MARCAS.map((item) => (
             <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 max-w-xs w-full'>
+              <a href={item.href} target='_blank' rel='noopener noreferrer'>
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  class='w-full hover:scale-105 ease-out duration-300'
+                />
+              </a>
+            </div>
+          ))
+        }
+      </section>
+      
+    </div>
+    <Title>Creadores Afiliados</Title>
+    <section class='flex flex-wrap justify-center gap-4 w-full px-4' style='margin-top: -50px;'>
+      {
+        CREATORS.map((item) => (
+          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-4/12 max-w-xs w-full'>
+            <a href={item.href} target="_blank" rel="noopener noreferrer">
               <img
                 src={item.img}
                 alt={item.name}
                 class='w-full hover:scale-105 ease-out duration-300'
               />
-            </div>
-          ))
-        }
-      </section>
-    </div>
-    <Title>Creadores Afiliados</Title>
-    <section class='flex flex-wrap justify-center gap-4 w-full px-4'>
-      {
-        CREATORS.map((item) => (
-          <div class='flex relative items-center justify-center lg:w-3/12 sm:w-4/12 max-w-xs w-full'>
-            <img
-              src={item.img}
-              alt={item.name}
-              class='w-full hover:scale-105 ease-out duration-300'
-            />
+            </a>
           </div>
         ))
       }
     </section>
+    
   </main>
 </Layout>

@@ -5,11 +5,11 @@ import { STAFF, ROLES } from '../data/staff.data.js'
 import StaffGrid from '../components/StaffGrid.svelte'
 ---
 
-<Layout title='Staff'>
+<Layout title='Directores'>
   <main
     class='flex flex-col flex-grow items-center gap-6 lg:max-w-[70rem] sm:max-w-[37.5rem] w-full animate-fade-up'
   >
-    <Title>Staff</Title>
+    <Title>Directores</Title>
     <StaffGrid {STAFF} {ROLES} client:load />
   </main>
 </Layout>

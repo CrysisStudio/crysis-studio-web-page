@@ -46,6 +46,16 @@
 </header>
 
 <style>
+  /*
+  cambiada la fuente
+  */
+   @font-face {
+  font-family: 'Azonix';
+  src: url('/fonts/Azonix.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
   @keyframes fade-down {
     0% {
       opacity: 0;
@@ -59,6 +69,7 @@
 
   @media (min-width: 1025px) {
     header {
+      font-family: 'Azonix', sans-serif;
       animation: fade-down 1s both;
     }
   }
