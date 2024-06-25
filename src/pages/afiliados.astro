@@ -1,22 +1,18 @@
 ---
 import Title from '../components/Title.astro'
 import Layout from '../layouts/Layout.astro'
-import { AFFILIATES } from '../data/affiliates.data'
-import { MARCAS } from '../data/affiliates.data'
-import { CREATORS } from '../data/affiliates.data'
+import { MARCAS, CREATORS } from '../data/affiliates.data'
 ---
 
 <Layout title='Afiliados'>
-  <main
-    class='flex flex-col flex-grow items-center gap-8 lg:max-w-full sm:max-w-[37.5rem] w-full animate-fade-up'
-  >
+  <main class='flex flex-col flex-grow items-center gap-8 lg:max-w-full sm:max-w-[37.5rem] w-full animate-fade-up'>
     <div class='mt-20 flex flex-col w-full'>
       <Title>Marcas Afiliadas</Title>
 
-      <section class='flex flex-wrap justify-center gap-4 w-full px-4'  style='margin-top: 40px;'>
+      <section class='flex flex-wrap justify-center gap-4 w-full px-4' style='margin-top: 40px;'>
         {
           MARCAS.map((item) => (
-            <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 max-w-xs w-full'>
+            <div class='flex relative items-center justify-center lg:w-3/12 sm:w-5/12 max-w-[250px] w-full'> {/* Aquí ajusté el tamaño a max-w-[100px] */}
               <a href={item.href} target='_blank' rel='noopener noreferrer'>
                 <img
                   src={item.img}

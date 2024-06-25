@@ -4,12 +4,11 @@ export const ROLES = {
   DIRECTOR: 'Directores',
 
 }
-// cambiado para solamente directores auxiliares, FALTAN FOTOS
 
 export const STAFF = [
   {
     name: 'Leavy',
-    img: '/staff/leavy.webp',
+    img: '/staff/leavy.png',
   },
   {
     name: 'Drift',
@@ -26,28 +25,28 @@ export const STAFF = [
   },
     {
     name: 'anchy',
-    img: '/staff/anchy.webp',
+    img: '/staff/anchy.png',
     role: [
       ROLES.DIRECTORES
     ],
   },
   {
     name: 'Betun',
-    img: '/staff/a.jpg',
+    img: '/staff/betun.png',
     role: [
       ROLES.DIRECTORES
     ],
   },
   {
     name: 'Fitzxel',
-    img: '/staff/a.jpg',
+    img: '/staff/fitzel.jpg',
     role: [
       ROLES.DIRECTORES
     ],
   },
   {
     name: 'lapeke',
-    img: '/staff/peke.webp',
+    img: '/staff/peke.jpg',
     role: [
       ROLES.DIRECTORES
     ],

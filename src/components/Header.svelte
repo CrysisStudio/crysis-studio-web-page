@@ -12,7 +12,7 @@
       href: '/eventos'
     },
     {
-      label: 'STAFF',
+      label: 'DIRECTORES',
       href: '/staff'
     },
     {
