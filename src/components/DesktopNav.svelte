@@ -18,8 +18,17 @@
 </nav>
 
 <style>
+  @font-face {
+    font-family: 'Azonix';
+    src: url('fonts/Azonix.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   @media (max-width: 1050px) {
     nav {
+      font-family: 'Azonix', sans-serif;
       display: none;
     }
   }

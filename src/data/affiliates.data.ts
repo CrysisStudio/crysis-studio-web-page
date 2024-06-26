@@ -1,39 +1,28 @@
 export const AFFILIATES = [
-  {
-    name: 'AguWZ',
-    img: '/affiliates/aguwz.webp'
-  },
-  {
-    name: 'BoxMine',
-    img: '/affiliates/boxmine.webp'
-  }
 ]
 export const MARCAS = [
   {
-    name: 'wachu',
-    img: '/affiliates/wachu.webp'
+    name: 'Minemu',
+    img: '/affiliates/minemu.webp',
+    href: 'https://minemu.es/'
   },
-  {
-    name: 'bangamestudios',
-    img: '/affiliates/bangamestudios.webp'
-  },
-  {
-    name: 'Dlfferent',
-    img: '/affiliates/different.webp'
-  }
+
 ]
 
 export const CREATORS = [
   {
     name: 'pop',
-    img: '/affiliates/pop.webp'
+    img: '/affiliates/pop.webp',
+    href: 'https://twitter.com/PopGeneration30'
   },
   {
-    name: 'BoxMine',
-    img: '/affiliates/recurso.webp'
+    name: 'lapeke',
+    img: '/affiliates/peke.png',
+    href: 'https://linktr.ee/0lapeke0'
   },
   {
-    name: 'Dlfferent',
-    img: '/affiliates/honi.webp'
+    name: 'sund',
+    img: '/affiliates/sund.png',
+    href: 'https://linktr.ee/sundofficial'
   }
-]
+];

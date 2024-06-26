@@ -24,22 +24,15 @@
         href: 'https://twitter.com/CrysisStudio'
       },
       {
-        path: '/icons/soundcloud.svg',
-        href: 'https://soundcloud.com/crysis-studio'
-      },
-      {
         path: '/icons/youtube.svg',
         href: 'https://www.youtube.com/channel/UCdqhh7G46sWf7RiNF0xs8Mg'
       }
     ],
     collab: [
+      // agregado modrinth {donde esta mi mod :) dea}
       {
-        path: '/icons/patreon.svg',
-        href: 'https://www.patreon.com/CrysisStudio'
-      },
-      {
-        path: '/icons/coffe.svg',
-        href: 'https://ko-fi.com/crysisstudio#paypalModal'
+        path: '/icons/modrinth.svg',
+        href: 'https://modrinth.com/user/CrysisStudio'
       }
     ]
   }

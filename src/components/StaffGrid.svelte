@@ -25,7 +25,7 @@
 <div class="flex flex-col gap-3 px-4">
   <span class="flex gap-4 justify-center flex-wrap w-full max-w-[900px]">
     {#each rolesValues as role}
-      <FilterButton {handleClick} {role} {active} />
+<!-- <FilterButton {handleClick} {role} {active} /> COMENTADO, me pidieron sacarlo :v -->
     {/each}
   </span>
 </div>

@@ -1,4 +1,13 @@
 export const EVENTS = [
+  // agregado distrito olvidado y nucleaquaria {orgulloso de haber hecho distrito olvidado}
+  {
+    name: 'Distrito Olvidado',
+    img: '/events/distrito-olvidado.webp'
+  },
+  {
+    name: 'Nucleaquaria',
+    img: '/events/nucleaquaria.webp'
+  },
   {
     name: 'Choque Elemental',
     img: '/events/choqueelemental.webp'
